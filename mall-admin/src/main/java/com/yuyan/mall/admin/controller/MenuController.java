@@ -20,7 +20,7 @@ import java.util.List;
  */
 @Api("菜单接口")
 @RestController
-@RequestMapping("/admin")
+@RequestMapping("/admin/menu")
 public class MenuController {
     @Autowired
     private MenuServer menuServer;
