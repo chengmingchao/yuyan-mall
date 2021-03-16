@@ -5,3 +5,18 @@ spring:
   application:
     name: mall-gateway
 
+# nacos
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+# gateway网关
+    gateway:
+      routes:
+      - id: mall-admin
+        uri: lb://mall-admin
+        predicates:
+          - Path=/api/**
+        filters:
+          - RewritePath=/api(?<segment>/?.*), $\{segment}

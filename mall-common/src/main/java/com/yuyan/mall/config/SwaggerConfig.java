@@ -13,7 +13,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * @Description swagger配置
  * @Date 2021/3/15 21:06
- * @Created by chengmingchao
+ * @author chengmingchao
  */
 @Configuration
 @EnableSwagger2
@@ -33,7 +33,6 @@ public class SwaggerConfig {
                 .title("Spring Boot中使用Swagger2构建RESTful API")
                 .description("rest api 文档构建利器")
                 .termsOfServiceUrl("http://blog.csdn.net/itguangit")
-                .contact("itguang")
                 .version("1.0")
                 .build();
     }
