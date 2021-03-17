@@ -1,6 +1,7 @@
 server:
   port: 7070
-
+  servlet:
+    context-path: /admin
 spring:
   application:
     name: mall-admin
@@ -8,6 +9,8 @@ spring:
   cloud:
     nacos:
       discovery:
+        server-addr: 127.0.0.1:8848
+      config:
         server-addr: 127.0.0.1:8848
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/mall_admin?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8
